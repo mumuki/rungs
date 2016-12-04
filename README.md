@@ -13,3 +13,7 @@ git clone https://github.com/mumuki/rungs rungs
 cd rungs
 nexe  -i index.js -o rungs
 ```
+
+# Deprecation
+
+Replaced by https://github.com/gobstones/gs-weblang-cli
