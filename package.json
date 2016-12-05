@@ -1,23 +1,27 @@
 {
-  "name": "rungs",
-  "version": "1.0.0",
-  "description": "gs-weblang-core native wrapper",
-  "main": "index.js",
-  "dependencies": {
-    "gs-weblang-core": "github:gobstones/gs-weblang-core#9489e2f467b74db8d59439ae0993f9f90cb38e6c"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "gs-weblang-cli",
+  "version": "1.0.2",
+  "description": "CLI for Gobstones",
+  "main": "src/cli.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mumuki/rungs.git"
+    "url": "git+https://github.com/gobstones/gs-weblang-cli.git"
   },
-  "author": "Franco Leonardo Bulgarelli",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mumuki/rungs/issues"
+  "bin": {
+    "gs-weblang-cli": "bin/gs-weblang-cli"
   },
-  "homepage": "https://github.com/mumuki/rungs#readme"
+  "author": "Rodrigo Alfonso",
+  "license": "ISC",
+  "dependencies": {
+    "gs-weblang-core": "^1.3.10",
+    "lodash": "^4.17.2",
+    "node-getopt": "^0.2.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test" : "./node_modules/mocha/bin/mocha ./test/run-spec.js"
+  }
 }
